@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Form HTML5</title>
+  </head>
+  <body>
+    <h1>Form Pendaftaran</h1>
+    <form action="" method="post">
+      <label for="usename">Nama Pengguna:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        placeholder="Masukkan nama pengguna"
+      /><br /><br />
+
+      <label for="password">Kata Sandi:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="Masukkan kata sandi"
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Masukkan email"
+      /><br /><br />
+
+      <label for="birthdate">Tanggal Lahir:</label>
+      <input type="date" id="birthdate" name="birthdate" /><br /><br />
+
+      <label for="gender">Jenis Kelamin:</label>
+      <input
+        type="radio"
+        name="gender"
+        value="male"
+        required
+        placeholder="Pria"
+      />Pria
+      <input
+        type="radio"
+        name="gender"
+        value="female"
+        required
+        placeholder="Wanita"
+      />
+      Wanita<br /><br />
+
+      <label for="country">Negara:</label>
+      <select id="country" name="country">
+        <option value="indonesia">Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="singapore">Singapore</option></select
+      ><br /><br />
+
+      <label for="message">Pesan:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        placeholder="Tulis pesan Anda di sini..."
+        placeholder
+      ></textarea
+      ><br /><br />
+
+      <input
+        type="checkbox"
+        name="subscribe"
+        value="yes"
+        required
+        placeholder="Yes"
+      />Belangganan newsletter<br /><br />
+      <input
+        type="submit"
+        name="submit"
+        value="Daftar"
+        required
+        placeholder="Daftar"
+      />
+    </form>
+  </body>
+</html>

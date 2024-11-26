@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Form Biodata Diri</title>
+</head>
+<body>
+    <td>
+    <form action="#" method="post">
+    <table>
+    <table border="2">
+    <td>User Name</td>
+    <td><input type="text" name="username" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>Password</td>
+    <td><input type="password" name="password" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>Re-type Password</td>
+    <td><input type="password" name="retype_password" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>E-mail</td>
+    <td><input type="email" name="email" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>Nama</td>
+    <td><input type="text" name="nama" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>NIM</td>
+    <td><input type="text" name="nim" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>Alamat</td>
+    <td><input type="text" name="alamat" required placeholder="..."/></td>
+    </tr>
+    <tr>
+    <td>Kota Asal</td>
+    <td>
+      <label for="kota asal">Kota Asal</label>
+      <select id="kota asal" name="continent" required>
+        <option value="">None</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="solo">Solo</option>
+        <option value="bandung">Bandung</option></select><br /><br />
+    </td>
+    </tr>
+    <tr>
+    <td>Jenis Kelamin</td>
+    <td>
+    <input type="radio" name="jenis_kelamin" value="pria" required placeholder="Pria"/>Pria
+    <input type="radio" name="jenis_kelamin" value="wanita" required placeholder="Wanita"/>Wanita
+    </td>
+    </tr>
+    <tr>
+    <td>HOBI</td>
+    <td>
+    <input type="checkbox" name="hobi" value="coding" required placeholder="..."/>Coding
+    <input type="checkbox" name="hobi" value="psan" required placeholder="..."/>PSan
+    <input type="checkbox" name="hobi" value="bilyard" required placeholder="..."/>Bilyard
+    </td>
+    </tr>
+    <tr>
+    <td>Deskripsi Pribadi</td>
+    <td><textarea name="deskripsi_pribadi" rows="5" cols="30" required placeholder="..."></textarea></td>
+    </tr>
+    <tr>
+    <td colspan="2">
+    <input type="submit" value="Kirim" />
+    <input type="reset" value="Hapus" />
+    </td>
+    </tr>
+    </table>
+    </form>
+</td>
+</body>
+</html>
