@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Confirm Box</title>
+  <script>
+    function showConfirm() {
+      // Menampilkan dialog konfirmasi
+      let result = confirm("Press a button!");
+      if (result) {
+        alert("You pressed OK!");
+      } else {
+        alert("You pressed Cancel!");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>JavaScript Confirm Box</h1>
+  <iframe src="https://www.w3schools.com" style="display:none;"></iframe>
+  <button onclick="showConfirm()">Try it</button>
+</body>
+
+</html>
