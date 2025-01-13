@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deret Bilangan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .container {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .output {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Deret Bilangan</h3>
+    <p>Nilai awal: 20, Nilai akhir: 80, Pertambahan: 10</p>
+    <button onclick="generateDeret()">Tampilkan Deret</button>
+    <div class="output" id="hasil"></div>
+  </div>
+
+  <script>
+    function generateDeret() {
+      let hasil = "";
+      let awal = 20;
+      const akhir = 80;
+      const pertambahan = 10;
+
+      // Menggunakan perulangan for
+      for (let i = awal; i <= akhir; i += pertambahan) {
+        hasil += i + " ";
+      }
+
+      document.getElementById("hasil").innerText = hasil.trim();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Menu Makanan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    select,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Daftar Menu Makanan</h3>
+    <label for="menu">Pilih Menu Makanan:</label>
+    <select id="menu">
+      <option value="1">1. Ayam Geprek</option>
+      <option value="2">2. Soto Ayam</option>
+      <option value="3">3. Nasi Goreng</option>
+      <option value="4">4. Gado-Gado</option>
+    </select>
+    <button onclick="tampilkanMenu()">Tampilkan</button>
+    <div class="result" id="hasil"></div>
+  </div>
+
+  <script>
+    function tampilkanMenu() {
+      const pilihan = document.getElementById("menu").value;
+      let hasil;
+
+      switch (pilihan) {
+        case "1":
+          hasil = "Anda memilih: Ayam Geprek";
+          break;
+        case "2":
+          hasil = "Anda memilih: Soto Ayam";
+          break;
+        case "3":
+          hasil = "Anda memilih: Nasi Goreng";
+          break;
+        case "4":
+          hasil = "Anda memilih: Gado-Gado";
+          break;
+        default:
+          hasil = "Pilihan tidak valid!";
+          break;
+      }
+
+      document.getElementById("hasil").innerText = hasil;
+    }
+  </script>
+</body>
+
+</html>
