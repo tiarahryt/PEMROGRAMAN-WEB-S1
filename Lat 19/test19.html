@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Pemrograman Web 1</title>
+  <script>
+    // Fungsi untuk menghitung penjumlahan
+    function add() {
+      var a = Number(document.getElementById("first").value);
+      var b = Number(document.getElementById("second").value);
+      var c = a + b; // Penjumlahan
+      document.getElementById("result").innerHTML = "Hasil Penjumlahan: " + c;
+    }
+
+    // Fungsi untuk menghitung pengurangan
+    function subtract() {
+      var a = Number(document.getElementById("first").value);
+      var b = Number(document.getElementById("second").value);
+      var c = a - b; // Pengurangan
+      document.getElementById("result").innerHTML = "Hasil Pengurangan: " + c;
+    }
+
+    // Fungsi untuk menghitung perkalian
+    function multiply() {
+      var a = Number(document.getElementById("first").value);
+      var b = Number(document.getElementById("second").value);
+      var c = a * b; // Perkalian
+      document.getElementById("result").innerHTML = "Hasil Perkalian: " + c;
+    }
+
+    // Fungsi untuk menghitung pembagian
+    function divide() {
+      var a = Number(document.getElementById("first").value);
+      var b = Number(document.getElementById("second").value);
+      if (b === 0) {
+        document.getElementById("result").innerHTML = "Pembagian dengan 0 tidak diperbolehkan!";
+      } else {
+        var c = a / b; // Pembagian
+        document.getElementById("result").innerHTML = "Hasil Pembagian: " + c;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Kalkulator Pemrograman Web</h1>
+  <label>Masukkan Angka Pertama:</label>
+  <input id="first" type="number">
+  <br><br>
+  <label>Masukkan Angka Kedua:</label>
+  <input id="second" type="number">
+  <br><br>
+  <button onclick="add()">+</button>
+  <button onclick="subtract()">-</button>
+  <button onclick="multiply()">*</button>
+  <button onclick="divide()">:</button>
+  <br><br>
+  <h2 id="result">Hasil Perhitungannya adalah:<h2>
+</body>
+
+</html>
